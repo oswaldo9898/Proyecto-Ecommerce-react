@@ -1,0 +1,33 @@
+
+.cartShop {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.cartShop .iconCart {
+    height: 70%;
+    margin-right: 20px;
+}
+
+.cartShop .cantProducts {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(173, 24, 24);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 10px;
+    right: 40px;    
+}
+
+.cant {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    
+}
