@@ -1,6 +1,7 @@
 import './styles.css';
 import { CartWidget } from './../CartWidget';
 import logo from './../../assets/img/logo-tienda.png';
+import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
     return (
@@ -14,16 +15,14 @@ const NavBar = () => {
 
             <nav className="menu">
                 <ul>
-                    <li> <a href='#5'>TIENDA</a> </li>
-                    <li> <a href='#5'>CATEGORIAS <i class="bi bi-caret-down-fill"></i></a> 
+                    <li><NavLink to="/">TIENDA</NavLink></li>
+                    <li> <a href='#5'>CATEGORIAS</a> 
                         <ul>
-                            <li><a href="#3">BTS</a></li>
-                            <li><a href="#3">FIGURAS</a></li>
-                            <li><a href="#3">FUNKO POPS</a></li>
-                            <li><a href="#3">GAMER</a></li>
-                            <li><a href="#3">MANGA</a></li>
-                            <li><a href="#3">MOCHILAS</a></li>
-                            <li><a href="#3">PLAYERAS</a></li>
+                            <li><NavLink to="/categoria/bts">BTS</NavLink></li>
+                            <li><NavLink to="/categoria/camiseta">CAMISETAS</NavLink></li>
+                            <li><NavLink to="/categoria/figura">FIGURAS</NavLink></li>
+                            <li><NavLink to="/categoria/funko-pop">FUNKO POPS</NavLink></li>
+                            <li><NavLink to="/categoria/mochila">MOCHILAS</NavLink></li>
                         </ul>
                     </li>
                     <li> <a href='#5'>LOCALES</a> </li>

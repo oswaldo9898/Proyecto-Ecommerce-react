@@ -1,0 +1,326 @@
+[
+    {
+        "id":1,
+        "title": "Camisetas de Luffy de One Piece",
+        "price": 12.5,
+        "description": "Camiseta blanca con estampado a color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F1z8HfYDt%2FCamisetas-de-Luffy-de-One-Piece.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id": 2,
+        "title": "Camiseta estampada con logotipo de Tokyo Revengers",
+        "price": 12.5,
+        "description": "Camiseta negra con estampado a un solo color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FvBGcCJPS%2FCamiseta-estampada-con-logotipo-de-Tokyo-Revengers.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":3,
+        "title":"Camiseta de Tokyo Revengers",
+        "price":12.5,
+        "description": "Camiseta negra con estampado a un solo color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FzvB3GnYC%2FCamiseta-de-Tokyo-Revengers.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":4,
+        "title":"Camiseta de Ken Ryuguji de Tokyo Revengers",
+        "price":12.5,
+        "description": "Camiseta negra y/o blanca con estampado a color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FxT1F9qJ9%2FCamiseta-de-Ken-Ryuguji-de-Tokyo-Revengers.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":5,
+        "title":"Camisetas básicas con varios diseños de Tokyo Ghoul",
+        "price":12.5,
+        "description": "Camisetas básicas con varios diseños de Tokyo Ghoul",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F9X8Ytb0j%2FCamisetas-b-sicas-con-varios-dise-os-de-Tokyo-Ghoul.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":6,
+        "title":"Camiseta de Ken Kaneki de Tokyo Ghoul",
+        "price":12.5,
+        "description": "Camiseta negra con estampado a color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fy8znpPqp%2FCamiseta-de-Ken-Kaneki-de-Tokyo-Ghoul.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":7,
+        "title":"Camiseta estampada de Shingeki No Kyojin",
+        "price":12.5,
+        "description": "Camiseta blanca con estampado a un solo color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fmg8M3NTH%2FCamiseta-estampada-de-Shingeki-No-Kyojin.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":8,
+        "title":"Camiseta de Levi Ackerman de Shingeki no Kyojin",
+        "price":12.5,
+        "description": "Camiseta negra con estampado a un solo color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FVN2J4Kpd%2FCamiseta-de-Levi-Ackerman-de-Shingeki-no-Kyojin.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":9,
+        "title":"Camiseta de Pikachu de Pokemon",
+        "price":12.5,
+        "description": "Camiseta celeste con estampado a color.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FNFSC0qzQ%2FCamiseta-de-Pikachu-de-Pokemon.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":10,
+        "title":"Camiseta estampada con Satoru Gojo serio del Jujutsu Kaisen",
+        "price":12.5,
+        "description": "Camiseta estampada con Satoru Gojo serio del Jujutsu Kaisen.",
+        "category": "camiseta",
+        "image": "https://konbini-otaku.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FbwYvp7k7%2FCamiseta-estampada-con-Satoru-Gojo-serio-del-Jujutsu-Kaisen.jpg&w=1920&q=75",
+        "rating":3.9
+    },
+    {
+        "id":11,
+        "title":"Funko Pop Animation: One Piece - Brook",
+        "price":15,
+        "description": "Funko Pop Animation: One Piece - Brook",
+        "category": "funko-pop",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/54463-One-Piece-Brook-POP-CC-WEB_1300x1300_db79fc3b-e971-4e0e-af03-d49a97e3e8db_1024x1024.png?v=1612255742",
+        "rating":3.9
+    },
+    {
+        "id":12,
+        "title":"Funko Pop Animation: One Piece - Crocodile",
+        "price":15,
+        "description": "Funko Pop Animation: One Piece - Crocodile",
+        "category": "funko-pop",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/54464-One-Piece-Crocodile-POP-CC-WEB_1300x1300_bb4f7954-f85b-4ac9-8480-093dfff33576_1024x1024.png?v=1612255103",
+        "rating":3.9
+    },
+    {
+        "id":13,
+        "title":"Funko Pop! - Harley Quinn",
+        "price":15,
+        "description": "Funko Pop! - Harley Quinn With Cards #454",
+        "category": "funko-pop",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/454-funko-pop-figure-harley-quinn-30-harley-quinn-with-cards_1024x1024.jpg?v=1673305542",
+        "rating":3.9
+    },
+    {
+        "id":14,
+        "title":"Funko Naruto Modo Sabio En Gamakichi Exclusivo Pop Naruto",
+        "price":20,
+        "description": "Funko Naruto Modo Sabio En Gamakichi Exclusivo Pop Naruto",
+        "category": "funko-pop",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/41DRJf8n7SL_f415f75a-77f0-4765-8923-cb2c65cfb421_1024x1024.jpg?v=1673309163",
+        "rating":3.9
+    },
+    {
+        "id":15,
+        "title":"Demon Slayer: Kimetsu No Yaiba Rui Pop!",
+        "price":18,
+        "description": "Demon Slayer: Kimetsu No Yaiba Rui Pop!",
+        "category": "funko-pop",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/0e247d6e77d546298a25f326b25c3e6blg_1024x1024.webp?v=1674690807",
+        "rating":3.9
+    },
+    {
+        "id":16,
+        "title":"Demon Slayer: Kimetsu No Yaiba Giyu Tomioka",
+        "price":12.5,
+        "description": "Demon Slayer: Kimetsu No Yaiba Giyu Tomioka Vol. 5 - Figura",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/tomioka1_1024x1024.jpg?v=1643851778",
+        "rating":3.9
+    },
+    {
+        "id":17,
+        "title":"Demon Slayer: Kimetsu No Yaiba Kanao Tsuyuri Pop!",
+        "price":15,
+        "description": "Demon Slayer: Kimetsu No Yaiba Kanao Tsuyuri Pop!",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/17095c3f78ea4c1b90730177e2feb0bclg_1024x1024.webp?v=1674689931",
+        "rating":3.9
+    },
+    {
+        "id":18,
+        "title":"Demon Slayer: Kimetsu No Yaiba Kyojuro Rengoku Pop!",
+        "price":16.5,
+        "description": "Demon Slayer: Kimetsu No Yaiba Kyojuro Rengoku Pop!",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/ef7009b0ee724aeb877eae0d2dfb4496lg_1024x1024.webp?v=1674689333",
+        "rating":3.9
+    },
+    {
+        "id":19,
+        "title":"Dragon Ball Z Gotenks Solid Edge Works",
+        "price":16,
+        "description": "Dragon Ball Z Gotenks Solid Edge Works Vol. 6 - Figura",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/got1_1024x1024.jpg?v=1643850081",
+        "rating":3.9
+    },
+    {
+        "id":20,
+        "title":"Good Smile Pop Up Parade: Character Vocal Series 01 - The Vampire",
+        "price":20,
+        "description": "Good Smile Pop Up Parade: Character Vocal Series 01 - The Vampire",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/gsc94613_6_1024x1024.jpg?v=1662284188",
+        "rating":3.9
+    },
+    {
+        "id":21,
+        "title":"Jujutsu Kaisen Sukuna Version B Q Posket - Figura",
+        "price":18,
+        "description": "Jujutsu Kaisen Sukuna Version B Q Posket - Figura",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/b7d421a1b1b24e83869723df4ab37483xl_1024x1024.jpg?v=1643846871",
+        "rating":3.9
+    },
+    {
+        "id":22,
+        "title":"Re:Zero Starting Life In Another World Rem Chronicle Exq",
+        "price":22,
+        "description": "Re:Zero Starting Life In Another World Rem Chronicle Exq",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/09fced9360324ab1b80cfd88655c8203xl_1024x1024.jpg?v=1643709646",
+        "rating":3.9
+    },
+    {
+        "id":23,
+        "title":"Attack On Titan Mikasa Ackerman ARTFX J 1:8 Scale Statue - ReRun",
+        "price":18,
+        "description": "Attack On Titan Mikasa Ackerman ARTFX J 1:8 Scale Statue - ReRun",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/139955062_805020446749896_166479201378053780_o_900x900.jpg?v=1611956795",
+        "rating":3.9
+    },
+    {
+        "id":24,
+        "title":"My Hero Academia - Shoto Todoroki",
+        "price":18,
+        "description": "Bandai Spirits Ichibansho - My Hero Academia - Shoto Todoroki",
+        "category": "figura",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/41BHAUDITVL_c563e903-a1e6-4b42-bcfc-e831deace44f_1024x1024.jpg?v=1630302080",
+        "rating":3.9
+    },
+    {
+        "id":25,
+        "title":"UNO BTS",
+        "price":7,
+        "description": "Es el juego a juego que sabes. Los jugadores pasan por deshacerse de todas sus tarjetas a juego con una tarjeta en su mano con la actual tarjeta que se muestra.",
+        "category": "bts",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/uno_bts_1024x1024.jpg?v=1581313882",
+        "rating":3.9
+    },
+    {
+        "id":26,
+        "title":"Funko Pop Rocks: BTS Butter - Jung Kook",
+        "price":15,
+        "description": "BTS Butter - Jung Kook Las figuras Pop Rock hacen a tus bandas favoritas como BTS de una manera estilizada e increíble, vienen en una caja con ventana lista para exhibirse.",
+        "category": "bts",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/jungkong2_1024x1024.png?v=1656047783",
+        "rating":3.9
+    },
+    {
+        "id":27,
+        "title":"Funko Pop Rocks: BTS Butter - Jin",
+        "price":15,
+        "description": "BTS Butter - Jin Las figuras Pop Rock hacen a tus bandas favoritas como BTS de una manera estilizada e increíble, vienen en una caja con ventana lista para exhibirse.",
+        "category": "bts",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/jin2_1024x1024.png?v=1656047926",
+        "rating":3.9
+    },
+    {
+        "id":28,
+        "title":"Funko Pop Rocks: BTS Butter - Jimin",
+        "price":15,
+        "description": "Figura Funko Pop Rocks: BTS Butter - Jimin Las figuras Pop Rock hacen a tus bandas favoritas como BTS de una manera estilizada e increíble, vienen en una caja con ventana lista para exhibirse.",
+        "category": "bts",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/jimin2_e4de77f7-3a5d-4196-9a60-6e1bda54bcbf_1024x1024.png?v=1656048066",
+        "rating":3.9
+    },
+    {
+        "id":29,
+        "title":"Funko Pop Rocks: BTS Butter - RM",
+        "price":15,
+        "description": "Las figuras Pop Rock hacen a tus bandas favoritas como BTS de una manera estilizada e increíble, vienen en una caja con ventana lista para exhibirse.",
+        "category": "bts",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/RM2_170fb76b-076d-4d3b-9653-5ba66d325546_1024x1024.png?v=1656047643",
+        "rating":3.9
+    },
+    {
+        "id":30,
+        "title":"BT21 - Vaso De Plástico Con Tapa Y Pajita Reutilizable",
+        "price":3.5,
+        "description": "K POP CUTIES: mantente hidratado con este vaso con Koya, RJ, Shooky, Mang, Chimmy, Cooky, Tata y Van, los personajes lindos y juguetones que siempre están listos para cantar",
+        "category": "bts",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/s-l500_1024x1024.jpg?v=1594967900",
+        "rating":3.9
+    },
+    {
+        "id":31,
+        "title":"CALCEDONIAS -PEGATINAS GADGET BT21",
+        "price":1,
+        "description": "Las pegatinas para gadgets son ideales para decorar cualquier gadget: portátil, tablet, smartphone El pack incluye 4 hojas con varios modelos de pegatinas en color negro.",
+        "category": "bts",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/vinilos-decorativos-bt21_1024x1024.jpg?v=1592986039",
+        "rating":3.9
+    },
+    {
+        "id":32,
+        "title":"Mini-Backpack - Demon Slayer Nezuko",
+        "price":15,
+        "description": "Mini-Backpack - Demon Slayer Nezuko ﻿¡Demuestra tu fanatismo por Demon Slayer con esta minimochila Demon Slayer Nezuko Metal Badge! Está confeccionado en piel sintética y presenta un cierre de cremallera en la parte superior",
+        "category": "mochila",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/mochilanezuko_1024x1024.webp?v=1653001562",
+        "rating":3.9
+    },
+    {
+        "id":33,
+        "title":"Naruto Shippuden Ichiraku Ramen Backpack",
+        "price":15,
+        "description": "La mochila Naruto Shippuden Ichiraku Ramen cuenta con impresión digital profesional para una calidad de color vibrante y duradera y durabilidad para el uso diario.MÚLTIPLES COMPARTIMENTOS:",
+        "category": "mochila",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/51rVpde-TCL_f080603d-57d2-411c-bfc2-bb56c0be71c1_1024x1024.jpg?v=1660171897",
+        "rating":3.9
+    },
+    {
+        "id":34,
+        "title":"Demon Slayer: Kimetsu No Yaiba Patterns Mini Mochila",
+        "price":20,
+        "description": "Mini Backpack Product Highlights  Exterior: 100% PU, forro: 100% poliéster de piel sintética y sarga Todo el patrón Kimetsu no Yaiba de Demon Slayer  Cierre de cremallera superior de 1 vía Pequeño bolsillo frontal con cierre de cremallera.",
+        "category": "mochila",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/demon-slayer-patterns-mini-backpack_1_1024x1024.jpg?v=1635929926",
+        "rating":3.9
+    },
+    {
+        "id":35,
+        "title":"Loungefly Disney Nbc Jack Skellington Mochila Nylon",
+        "price":20,
+        "description": "¡Soy el Rey Calabaza! - Jack SkellingtonEsta mochila de nailon incluye detalles impresos y un bolsillo interior para portátil. Esta es una nueva silueta cuadrada. Este nuevo cuerpo es ideal para colocar y sacar.",
+        "category": "mochila",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/MOCHILAJACK_1024x1024.jpg?v=1598486242",
+        "rating":3.9
+    },
+    {
+        "id":36,
+        "title":"Mochila Jack Skellington Convertible - Danielle Nicole",
+        "price":16,
+        "description": "¿Qué es esto? ¡Una mochila Jack Skellington perfecta para los meses fríos! Lleva al rey calabaza contigo a todas partes. Un giro moderno en un cuento de miedo, este bolso presenta una acogedora tela.",
+        "category": "mochila",
+        "image": "https://cdn.shopify.com/s/files/1/0293/3007/9877/products/Capturadepantalla2021-01-1720.38.13_1024x1024.png?v=1610941444",
+        "rating":3.9
+    }
+]
