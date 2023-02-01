@@ -1,4 +1,5 @@
 import './styles.css';
+import { NavLink } from 'react-router-dom';
 
 const ItemList = ({ products }) => {
     return (
@@ -19,7 +20,7 @@ const ItemList = ({ products }) => {
                         </div>
 
                         <span className='separador'></span>
-                        <button>Ver detalle</button>
+                        <button><NavLink to={`/producto/${product.id}`}>Ver detalle</NavLink></button>
                     </div>
                 );
             })}

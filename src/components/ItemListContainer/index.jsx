@@ -1,13 +1,13 @@
 import { useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import { ItemList } from '../ItemList';
+import { Loading } from '../Loading';
 import arrProducts from './../json/products.json';
 import './styles.css';
 
 const ItemListContainer = () => {
     const { category } = useParams();
     const [products, setProducts ] = useState([]);
-    console.log(category);
 
     useEffect(() => {
         const promesa = new Promise((resolve) => {
@@ -18,12 +18,11 @@ const ItemListContainer = () => {
         promesa.then((data) => {
             setProducts(data);
         })
-
     },[category]);
 
     return (
         <div className="contenidoPrincipal">
-            <ItemList products={products}/>
+            {(products.length === 0 ) ? <Loading /> :  <ItemList products={products}/>}
         </div>
     )
 }
