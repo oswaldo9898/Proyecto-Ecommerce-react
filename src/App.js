@@ -1,4 +1,4 @@
-import { NavBar, ItemListContainer, ItemDetailConatiner } from "./components";
+import { ItemListContainer, ItemDetailContainer, NavBar } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer />}></Route>
         <Route path="/categoria/:category" element={<ItemListContainer />}></Route>
-        <Route path="/producto/:idProduct" element={<ItemDetailConatiner />}></Route>
+        <Route path="/producto/:idProduct" element={<ItemDetailContainer />}></Route>
       </Routes>
     </BrowserRouter>
   );

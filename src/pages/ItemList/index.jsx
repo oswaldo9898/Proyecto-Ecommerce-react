@@ -5,9 +5,10 @@ const ItemList = ({ products }) => {
     return (
         <div className='cards'>
             {products.map((product) => {
+                // TODO ESTO PUEDE IR EN UN COMPONENTE CARD
                 return (
 
-                    <div className="card">
+                    <div key={product.id} className="card">
                         <div className='cardImg'>
                             <img className='img' src={`${product.image}`} alt={product.title} />
                         </div>

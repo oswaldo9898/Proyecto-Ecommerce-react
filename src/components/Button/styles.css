@@ -1,0 +1,31 @@
+.agregarButton {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px rgb(142, 141, 141);
+    border-radius: 10px;
+    color: rgb(142, 141, 141);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.agregarButton:hover {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: rgb(5, 134, 59);
+    background-color: rgb(5, 134, 59);
+    color: white;
+    box-shadow: 3px 3px rgba(0,0,0,0.3);
+}
+
+.botonProducto {
+    cursor: pointer;
+}
+
+@media (max-width: 880px) {
+    .agregarButton {
+        font-size: 15px;
+    }
+}

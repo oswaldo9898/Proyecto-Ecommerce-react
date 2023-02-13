@@ -1,27 +1,24 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+
+import {  useState } from 'react';
+import { Button } from './../../components';
 import './styles.css'
 
 const ItemDetail = ({product}) => {
 
-    const [cantidad, setCantidad] = useState('');
+    const [cant, setCant] = useState(1);
 
-    useEffect(()=> {
-        setCantidad('1')
-    }, [])
+    
 
 
     const handleCantidadAumentar = () => {
-        let cant = Number(cantidad);
-        let aumento = (cant + 1).toString();
-        setCantidad(aumento);
+        // let cant = Number(cantidad);
+        // let aumento = (cant + 1).toString();
+        setCant(cant + 1);
     }
 
     const handleCantidadDisminuir= () => {
-        let cant = Number(cantidad);
         if(cant > 1){
-            let aumento = (cant - 1).toString();
-            setCantidad(aumento);
+            setCant(cant - 1);
         }
         
     }
@@ -39,13 +36,12 @@ const ItemDetail = ({product}) => {
                 <div className='contenedorPrecioCantidad'>
                     <p className="precioProducto">$ {product.price}</p>
                     <div className='cantidadProducto'>
-                        <button id="menos" type="button" onClick={handleCantidadDisminuir}><i class="fa-solid fa-minus"></i></button>
-                        <input type="text" id="contador" defaultValue={cantidad} min='1' />
-                        <button id="mas" type="button" onClick={handleCantidadAumentar}><i class="fa-solid fa-plus"></i></button>
+                        <Button classButton='botonProducto' icono="fa-solid fa-minus"  handle={handleCantidadDisminuir}/>
+                        <div className='valorProducto'>{cant}</div>
+                        <Button classButton='botonProducto' icono="fa-solid fa-plus"  handle={handleCantidadAumentar}/>
                     </div>
                 </div>
-
-                <button className='agregarButton'><i class="fa-solid fa-cart-plus"></i> AGREGAR AL CARRITO</button>
+                <Button classButton='agregarButton' icono="fa-solid fa-cart-plus" texto='AGREGAR AL CARRITO'/>
 
             </div>
         </div>

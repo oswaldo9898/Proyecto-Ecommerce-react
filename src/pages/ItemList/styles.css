@@ -8,6 +8,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0px;
+    width: 100%;
 }
 .card {
     margin: 15px;
@@ -15,11 +19,16 @@
     width: 200px;
     border: solid 0px rgba(0, 0, 0, 0.3);
     font-size: 15px;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-    0 0  0 2px rgb(255,255,255),
-    0.3em 0.3em 1em rgba(0,0,0,0.3);
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    transition: all 300ms;
+}
+
+.card:hover {
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.5);
 }
 
 .cardImg {

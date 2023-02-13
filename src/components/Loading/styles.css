@@ -1,10 +1,11 @@
 .loadingContainer {
     height: 350px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #f5f6f7;
     border-radius: 5px;
 }
 
