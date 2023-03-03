@@ -1,8 +1,13 @@
-
-.cartShop {
+.centrarContenido {
     display: flex;
-    justify-content: center;    
     align-items: center;
+    justify-content: center;
+}
+
+.botonCartShop {
+    height: 70px !important;
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .cartShop .iconCart {
@@ -17,10 +22,6 @@
     background-color: rgb(173, 24, 24);
     border-radius: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     top: 10px;
     right: 40px;    
 }
@@ -30,6 +31,17 @@
     font-size: 18px;
     color: white;
     
+}
+
+
+/* MODAL */
+.tituloModal {
+    font-size: 15px !important;
+}
+
+.tituloModal span{
+    font-size: 12px !important;
+    color: #5e5e5e ;
 }
 
 

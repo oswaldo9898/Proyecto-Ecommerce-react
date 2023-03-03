@@ -1,4 +1,4 @@
-.agregarButton {
+.button {
     margin-top: 20px;
     padding: 10px;
     width: 100%;
@@ -8,6 +8,16 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 500ms;
+}
+
+.pagoButton:hover {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: rgb(5, 50, 134);
+    background-color: rgb(5, 37, 134);
+    color: white;
+    box-shadow: 3px 3px rgba(0,0,0,0.3);
 }
 
 .agregarButton:hover {

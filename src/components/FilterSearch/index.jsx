@@ -23,7 +23,7 @@ const FilterSearch = ( { asignarQuery } ) => {
             onChange = {(e) => 
               setQuery((prevState) => ({ ...prevState, title: e.target.value }))
             } />
-            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span><i className="fa-solid fa-magnifying-glass"></i></span>
         </div>
           
       </div>

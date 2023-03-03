@@ -1,27 +1,33 @@
 import './styles.css';
 import { NavLink } from 'react-router-dom';
 
-const ItemList = ({ products }) => {
+const ItemList = ({ products, agregarProducto }) => {
+
     return (
-        <div className='cards'>
+        <div className='cardsProducts'>
             {products.map((product) => {
                 // TODO ESTO PUEDE IR EN UN COMPONENTE CARD
                 return (
 
-                    <div key={product.id} className="card">
+                    <div key={product.id} className="cardProducto">
                         <div className='cardImg'>
-                            <img className='img' src={`${product.image}`} alt={product.title} />
+                            <NavLink to={`/producto/${product.id}`}>
+                                <img className='img' src={`${product.image}`} alt={product.title} />
+                            </NavLink>
                         </div>
                         
                         <div className="cardBody">
-                            <h3>{product.title}</h3>
+                            <NavLink className='nav_link' to={`/producto/${product.id}`}>
+                                <h3>{product.title}</h3>
+                            </NavLink>
+
                             <div className='cardPrice'>
                                 ${product.price}
                             </div>
                         </div>
 
                         <span className='separador'></span>
-                        <button><NavLink to={`/producto/${product.id}`}>Ver detalle</NavLink></button>
+                        <button onClick={()=>agregarProducto(1,product)} className='botonAgregar' ><i className="fa-solid fa-bag-shopping"></i> <span>AGREGAR AL CARRITO</span></button>
                     </div>
                 );
             })}

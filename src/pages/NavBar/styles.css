@@ -78,12 +78,13 @@ nav ul {
 /* SUBMENU DESPLEGABLE */
 .menu nav ul li ul {
     display: none;
-    position: absolute;
-    margin: 60px 0;
-    width: 200px;
-    height: 211px;
+    position: absolute !important;
+    margin: 60px 0 !important;
+    width: 200px !important;
+    height: 211px !important;
     box-shadow: 0px 2px 2px gray;
     z-index: 1;
+    padding-left: 0 !important;
 }
 
 .menu nav ul li:hover ul {

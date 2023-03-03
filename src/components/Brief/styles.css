@@ -1,0 +1,35 @@
+
+.tablaProducts{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+    width: 750px;
+}
+
+.tituloTabla {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.tablaProducto {
+    margin-left: 80px;
+    width: 350px;
+}
+
+.tablaPrecio {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.tablaCantidad {
+    width: 100px;
+}
+
+.tablaTotal {
+    margin-left: 10px;
+}
+

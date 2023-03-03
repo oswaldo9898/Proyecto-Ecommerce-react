@@ -3,4 +3,6 @@ export { CartWidget } from './CartWidget';
 export { Loading } from './Loading';
 export { BurgerButton } from './BurgerButton'
 export { FilterSearch} from './FilterSearch';
-export { FormFilter } from './FormFilter'
+export { FormFilter } from './FormFilter';
+export { ListCart } from './ListCart';
+export { Brief } from './Brief';

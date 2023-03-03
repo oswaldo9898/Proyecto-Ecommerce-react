@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
 const NavBar = () => {
+    
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {

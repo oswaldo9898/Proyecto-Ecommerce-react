@@ -2,30 +2,42 @@ import { useEffect,useState } from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "./../ItemDetail";
 import { Loading } from '../../components'
-import arrProducts from '../../components/json/products.json';
+import { useContext } from "react";
+import { CartContext } from "../../context";
+import { productsService } from './../../services/productService.js';
 import './styles.css'
+
 
 const ItemDetailContainer = () => {
     const { idProduct } = useParams();
     const [ product, setProduct ] = useState([]);
     const [loading, setLoading ] = useState(true);
+    const { addToCart } = useContext(CartContext);
 
 
     useEffect(()=>{
-        const promesa = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(idProduct ? arrProducts.find(p => p.id === Number(idProduct)) : []);
-            }, 1000);
-        });
-        promesa.then((data) => {
+        productsService.getProduct(idProduct).then((data) => {
             setProduct(data);
-            setLoading(!loading);
+            setLoading(false);
         });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[idProduct]);
+
+
+
+    const agregarProducto = (cantProducto) => {
+        const newItem = {
+            product,
+            quantity: cantProducto
+        }
+        addToCart(newItem);
+    }
+
+
 
     return(
         <div className="contenidoPrincipalDetail">
-            {loading ? <Loading /> :  <ItemDetail product={product}/>}
+            {loading ? <Loading /> :  <ItemDetail product={product} agregarProducto={agregarProducto}/>}
         </div>
     )
 }

@@ -1,0 +1,31 @@
+.iformacionPago {
+    height: 450px;
+    width: 380px;
+    min-width: 250px;
+    padding: 10px 30px;
+    margin-left: 40px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.5);
+}
+
+.cabeceraPago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cabeceraPago P {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.iformacionPago div {
+    display: flex;
+    flex-direction: column;
+}
+
+.iformacionPago div label{
+    font-size: 15px;
+}

@@ -1,31 +1,30 @@
-import { useEffect, useState} from 'react';
+import { useContext, useEffect, useState} from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 import { ItemList } from '../ItemList';
 import { Loading, FilterSearch, FormFilter } from '../../components';
-import arrProducts from '../../components/json/products.json';
 import './styles.css';
+import { CartContext } from '../../context';
+import { productsService } from './../../services/productService.js';
 
 const ItemListContainer = () => {
     const { category } = useParams();
     const [products, setProducts ] = useState([]);
     const [loading, setLoading ] = useState(true);
-
+    const { addToCart } = useContext(CartContext);
     const [criteria, setCriteria] = useState();
     const [searchParams, setSearchParams] = useSearchParams({
         title: ''
     });
 
-    useEffect(() => {
-        const promesa = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(category ? arrProducts.filter(p => p.category === category) : arrProducts);
-            },500)
-        });
-        promesa.then((data) => {
-            setProducts(data);
-            setLoading(false);
-        })
-    },[category]);
+
+
+    const agregarProducto = (cantProducto, productSelect) => {
+        const newItem = {
+            product: productSelect,
+            quantity: cantProducto
+        }
+        addToCart(newItem);
+    }
 
 
     useEffect(() => {
@@ -33,10 +32,21 @@ const ItemListContainer = () => {
     },[criteria, setSearchParams]);
     
     
+    // useEffect(() => {
+    //     productsService.getAllProductsSearch(searchParams).then((data) => {
+    //         setProducts(data);
+    //     });
+    // },[searchParams]);
+
+
     useEffect(() => {
-        let newArray = arrProducts.filter((product) => product.title.includes(searchParams.get('title')));
-        setProducts(newArray);
-    },[searchParams])
+        productsService.getAllProducts(category).then((datos) => {
+            console.log(datos)
+            setProducts(datos);
+            setLoading(false);
+        });
+    },[category]);
+
 
     return (
         <div className="contenedorPrincipal">
@@ -54,7 +64,7 @@ const ItemListContainer = () => {
                 <div className='filtrosForm'>
                     <FormFilter />
                 </div>
-                {loading ? <Loading /> :  <ItemList products={products} /> }
+                {loading ? <Loading /> :  <ItemList products={products} agregarProducto={agregarProducto} /> }
             </div>
         </div>
     )

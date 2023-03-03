@@ -3,24 +3,23 @@ import {  useState } from 'react';
 import { Button } from './../../components';
 import './styles.css'
 
-const ItemDetail = ({product}) => {
+const ItemDetail = ({product, agregarProducto}) => {
 
-    const [cant, setCant] = useState(1);
-
-    
-
+    const [cantProductoSelect, setCantProductoSelect] = useState(1);
 
     const handleCantidadAumentar = () => {
-        // let cant = Number(cantidad);
-        // let aumento = (cant + 1).toString();
-        setCant(cant + 1);
+        setCantProductoSelect(cantProductoSelect + 1);
     }
 
     const handleCantidadDisminuir= () => {
-        if(cant > 1){
-            setCant(cant - 1);
+        if(cantProductoSelect > 1){
+            setCantProductoSelect(cantProductoSelect - 1);
         }
         
+    }
+
+    const recibirCantidad = () => {
+        agregarProducto(cantProductoSelect)
     }
 
     return (
@@ -37,11 +36,11 @@ const ItemDetail = ({product}) => {
                     <p className="precioProducto">$ {product.price}</p>
                     <div className='cantidadProducto'>
                         <Button classButton='botonProducto' icono="fa-solid fa-minus"  handle={handleCantidadDisminuir}/>
-                        <div className='valorProducto'>{cant}</div>
+                        <div className='valorProducto'>{cantProductoSelect}</div>
                         <Button classButton='botonProducto' icono="fa-solid fa-plus"  handle={handleCantidadAumentar}/>
                     </div>
                 </div>
-                <Button classButton='agregarButton' icono="fa-solid fa-cart-plus" texto='AGREGAR AL CARRITO'/>
+                <Button handle={recibirCantidad} classButton='agregarButton' icono="fa-solid fa-cart-plus" texto='AGREGAR AL CARRITO'/>
 
             </div>
         </div>
