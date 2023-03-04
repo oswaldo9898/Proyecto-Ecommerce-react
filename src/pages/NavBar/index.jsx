@@ -1,5 +1,5 @@
 import './styles.css';
-import { CartWidget, BurgerButton } from './../../components';
+import { CartWidget, BurgerButton, AccountWidget } from './../../components';
 import logo from './../../assets/img/logo-tienda.png';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -38,11 +38,15 @@ const NavBar = () => {
                                 <li><NavLink onClick={handleClick} to="/categoria/mochila">MOCHILAS</NavLink></li>
                             </ul>
                         </li>
-                        <li> <a href='#5'><i className="fa-solid fa-earth-americas"></i> LOCALES</a> </li>
-                        <li> <a href='#5'><i className="fa-solid fa-envelope"></i> CONTACTO</a> </li>
+                        {/* <li> <a href='#5'><i className="fa-solid fa-earth-americas"></i> LOCALES</a> </li>
+                        <li> <a href='#5'><i className="fa-solid fa-envelope"></i> CONTACTO</a> </li> */}
                     </ul>
                 </nav>
-                <CartWidget />
+                <div className='cart-login'>
+                    <CartWidget />
+                    <AccountWidget />
+                </div>
+                
             </div>
 
         </header>

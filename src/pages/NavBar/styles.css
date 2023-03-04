@@ -119,6 +119,10 @@ nav ul {
     color: white;
 }
 
+.cart-login {
+    display: flex;
+}
+
 
 
 /* MEDIAQUERIS */
@@ -151,6 +155,8 @@ nav ul {
         font-size: 10px;
     }
 }
+
+
 
 @media (max-width: 770px) {
     .logo .logotipo {

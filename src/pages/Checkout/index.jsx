@@ -45,8 +45,13 @@ const Checkout = () => {
                 </div>
             </div>
             <div className='cartList'>
-                <Brief />
-                <Payment realizarPago={realizarPago}/>
+                <div className="detalleProducto">
+                    <Brief />
+                </div>
+                <div className="detallePago">
+                    <Payment realizarPago={realizarPago}/>
+                </div>
+                
             </div>
 
             

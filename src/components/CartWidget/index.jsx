@@ -20,10 +20,13 @@ const CartWidget = () => {
 
     useEffect(() => {
         let total = 0;
-        setCantProduct(cart.length);
+        let cantidadProductos = 0;
+        
         cart.map((element) => {
+            cantidadProductos +=  element.quantity;
            return total = total + ( element.product.price * element.quantity );
         });
+        setCantProduct(cantidadProductos);
         setTotalPagar(total);
     }, [cart]);
 
@@ -58,11 +61,11 @@ const CartWidget = () => {
                     {cart.length < 1 ? <div>No Hay productos en su carrito</div> : <ListCart arrayProductsCart = {cart} total={totalPagar} deleteProducToCart={deleteProducToCart} handleClose={handleClose}></ListCart> }
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" className="btn-sm" onClick={handleClose}>
                         SEGUIR COMPRANDO
                     </Button>
-                    <NavLink to={`/cart`}>
-                        <Button variant="success" onClick={handleClose}>
+                    <NavLink to={`/checkout`}>
+                        <Button variant="success" className="btn-sm" onClick={handleClose}>
                             HACER MI PAGO
                         </Button>
                     </NavLink>

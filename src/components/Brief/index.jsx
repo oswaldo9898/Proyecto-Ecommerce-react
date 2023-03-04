@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context';
+import { EmptyListCart } from '../EmptyListCart';
 import { ListCart } from '../ListCart';
 import './styles.css'
 
@@ -24,13 +25,15 @@ const Brief = () => {
     return(
         <>
         <div className='tablaProducts'>
+            
+            {cart.length < 1 ? <EmptyListCart /> : <> 
             <div className='tituloTabla'>
                 <div className='tablaProducto'>Producto</div>
                 <div className='tablaPrecio'>Precio</div>
                 <div className='tablaCantidad'>Cantidad</div>
                 <div className='tablaTotal'>Total</div>
-            </div>
-            {cart.length < 1 ? <div>No Hay productos en su carrito</div> : <ListCart arrayProductsCart = {cart} total={totalPagar} deleteProducToCart={deleteProducToCart}></ListCart>}
+            </div> 
+            <ListCart arrayProductsCart = {cart} total={totalPagar} deleteProducToCart={deleteProducToCart}></ListCart> </>}
         </div>
         </>
         

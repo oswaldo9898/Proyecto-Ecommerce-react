@@ -38,7 +38,6 @@
     width: 100px;
     margin-left:15px;
     font-weight: bold;
-    font-size: 18px;
 }
 
 .deleteProduct {
@@ -69,5 +68,57 @@
     margin: 5px;
     margin-right: 20px;
     font-weight: bold;
-    font-size: 18px;
+}
+
+
+
+
+@media (max-width: 991px) {
+    .cartProduct {
+        font-size: 13px;
+    }
+
+    .imgProductCart img{
+        height: 50px;
+        margin: 5px;
+    }
+
+    .priceProductCart {
+        margin-left: 10px;
+    }
+
+    .totalProductCart {
+        font-size: 13px;
+
+    }
+
+    .totalProductos {
+        font-size: 13px;
+
+    }
+}
+
+@media (max-width: 501px) {
+    .cartProduct {
+        font-size: 10px;
+    }
+
+    .imgProductCart img{
+        height: 50px;
+        margin: 5px;
+    }
+
+    .priceProductCart {
+        margin-left: 10px;
+    }
+
+    .totalProductCart {
+        font-size: 10px;
+
+    }
+
+    .totalProductos {
+        font-size: 10px;
+
+    }
 }

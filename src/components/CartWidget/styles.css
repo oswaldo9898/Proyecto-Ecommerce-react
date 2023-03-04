@@ -4,6 +4,10 @@
     justify-content: center;
 }
 
+.cartShop {
+    
+}
+
 .botonCartShop {
     height: 70px !important;
     background-color: transparent !important;
@@ -12,7 +16,7 @@
 
 .cartShop .iconCart {
     height: 70%;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .cartShop .cantProducts {
@@ -23,7 +27,7 @@
     border-radius: 50%;
 
     top: 10px;
-    right: 40px;    
+    right: 25px;    
 }
 
 .cant {

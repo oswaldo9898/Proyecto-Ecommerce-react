@@ -6,12 +6,37 @@ let arrProductosToCart = JSON.parse(localStorage.getItem('cart')) || [];
 
 
 const CartProvider = ({children}) => {
-
     const [cart, setCart] = useState(arrProductosToCart);
+    // const [usuarioLogin, setUsuarioLogin] = useState(false);
+    // const [datosUsuario, setDatosUsuario] = useState();
+
+
 
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart));
     },[cart]);
+
+
+    // useEffect(() => {
+    //     const auth = getAuth();
+    //     onAuthStateChanged(auth, (usuarioActivo) => {
+    //         if(usuarioActivo){
+    //             setDatosUsuario(usuarioActivo);
+    //             setUsuarioLogin(true);
+    //         }
+    //     });
+        // UsersService.isLogin().then((datos) => {
+        //     console.log('VIENE A COMPROBAR SI ESTA LOGEADO');
+        //     console.log('LOS SUPUESTOS DATOS SON: ',datos);
+        //     if(datos){
+        //         setDatosUsuario(datos);
+        //         setUsuarioLogin(true);
+        //     }else{
+        //         setUsuarioLogin(false);
+        //     }
+        // });
+    // },[]);
+
 
 
     const addToCart = (item) => {
@@ -55,11 +80,14 @@ const CartProvider = ({children}) => {
         )
     }
 
-  
+
     return(
         <CartContext.Provider 
         value = {{
             cart,
+            // usuarioLogin,
+            // setUsuarioLogin,
+            // setDatosUsuario,
             addToCart,
             removeItem,
             clear

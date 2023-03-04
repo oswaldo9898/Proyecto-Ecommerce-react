@@ -28,3 +28,31 @@
     align-items: flex-start;
     justify-content: space-between;
 }
+
+
+@media (max-width: 720px) {
+    
+
+    .tituloPrincipal h1{
+        font-size: 18px;
+    }
+
+    
+}
+
+@media (max-width: 675px) {
+    .encabezado {
+        flex-direction: column;
+    }
+
+    .tituloPrincipal {
+        padding: 0px !important;
+        margin: 15px 0 0 15px !important;
+    }
+
+    .buscadorTitle {
+        padding: 0px !important;
+        margin: 0 0 15px 15px !important;
+
+    }
+}

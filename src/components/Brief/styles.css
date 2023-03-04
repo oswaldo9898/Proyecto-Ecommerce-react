@@ -33,3 +33,86 @@
     margin-left: 10px;
 }
 
+
+@media (max-width: 1200px) {
+    .tablaProducts{
+        width: 700px;
+    }
+
+    .tituloTabla {
+        font-size: 15px;
+    }
+
+    .tablaProducto {
+        margin-left: 70px;
+        width: 335px;
+    }
+    
+    .tablaPrecio {
+        margin-left: 5px;
+        width: 100px;
+    }
+    
+    .tablaCantidad {
+        width: 100px;
+    }
+    
+    .tablaTotal {
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 1110px) {
+    .tablaProducts{
+        width: 600px;
+        font-size: 13px;
+    }
+
+    .tituloTabla {
+        font-size: 13px;
+    }
+
+    .tablaProducto {
+        margin-left: 70px;
+        width: 280px;
+    }
+    
+    .tablaPrecio {
+        margin-left: 5px;
+        width: 75px;
+    }
+    
+    .tablaCantidad {
+        width: 90px;
+        margin-left: 0px;
+    }
+    
+    .tablaTotal {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 990px) {
+    .tablaProducts{
+        width: 550px;
+        font-size: 13px;
+    }
+
+    .tablaProducto {
+        margin-left: 70px;
+        width: 235px;
+    }
+    
+    .tablaPrecio {
+        margin-left: 5px;
+        width: 70px;
+    }
+    
+    .tablaCantidad {
+        width: 80px;
+        margin-left: 0px;
+    }
+    
+}
+

@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState} from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 import { ItemList } from '../ItemList';
-import { Loading, FilterSearch, FormFilter } from '../../components';
+import { Loading, FilterSearch } from '../../components';
 import './styles.css';
 import { CartContext } from '../../context';
 import { productsService } from './../../services/productService.js';
@@ -32,16 +32,15 @@ const ItemListContainer = () => {
     },[criteria, setSearchParams]);
     
     
-    // useEffect(() => {
-    //     productsService.getAllProductsSearch(searchParams).then((data) => {
-    //         setProducts(data);
-    //     });
-    // },[searchParams]);
+    useEffect(() => {
+        productsService.getAllProductsSearch(searchParams).then((data) => {
+            setProducts(data);
+        });
+    },[searchParams]);
 
 
     useEffect(() => {
         productsService.getAllProducts(category).then((datos) => {
-            console.log(datos)
             setProducts(datos);
             setLoading(false);
         });
@@ -61,9 +60,9 @@ const ItemListContainer = () => {
             </div>
 
             <div className='listaProductos'>
-                <div className='filtrosForm'>
+                {/* <div className='filtrosForm'>
                     <FormFilter />
-                </div>
+                </div> */}
                 {loading ? <Loading /> :  <ItemList products={products} agregarProducto={agregarProducto} /> }
             </div>
         </div>
