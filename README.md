@@ -1,13 +1,13 @@
 # Proyecto final del curso de React CoderHouse
-El proyecto consiste en un sitio web e-commerce con tematica japonesa.
+El proyecto consiste en un sitio web e-commerce con tematica japonesa.\
 
-Las funcionalidades son las siguientes:
-    - El usuario puede agregar un producto al carrito de compras el cual se almacena en el localStorage
-    - Puede eliminar los productos del carrito
-    - Se implemento un incio de sesion con Firebase
-    - Para continuar con el proceso de compras debe iniciar sesion
-    - Puede el usuario crear una cuenta
-    - Una vez que el pago se ha procesado puede ver sus ordenes de compra con su respectivo detalle
+Las funcionalidades son las siguientes:\
+    - El usuario puede agregar un producto al carrito de compras el cual se almacena en el localStorage\
+    - Puede eliminar los productos del carrito\
+    - Se implemento un incio de sesion con Firebase\
+    - Para continuar con el proceso de compras debe iniciar sesion\
+    - Puede el usuario crear una cuenta\
+    - Una vez que el pago se ha procesado puede ver sus ordenes de compra con su respectivo detalle\
 
 
 ## Available Scripts
