@@ -1,39 +1,28 @@
-import "./styles.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { UsersService } from './../../services/auth.js';
 import { AuthContext } from "./../../context/auth";
+import { notificationSuccess, notificationError } from "../../utils.js";
 import { useContext } from "react";
-import { toast } from 'react-hot-toast';
+import "./styles.css";
+
 
 const Login = () => {
   const navigate = useNavigate();
 
   const { setUsuarioLogin } = useContext(AuthContext);
 
-
-
   const loginHandler = (e) => {
     e.preventDefault();
     const email = e.target.InputEmail.value;
-    const password = e.target.InputEmail.value;
+    const password = e.target.InputPassword.value;
     
       UsersService.loginUser(email, password).then((datos) => {
         if(datos){
           setUsuarioLogin(true)
-          console.log(datos)
           navigate('/')
+          notificationSuccess('Inición de Sesión Exitosa');
         }else{
-          toast.error('Datos incorrectos',
-            {
-                duration: 2000,
-                position: 'bottom-right',
-                style: {
-                    border: '1px solid #666',
-                    background: '#333',
-                    color: '#fff'
-                },
-            }
-          )
+          notificationError('Datos incorrectos')
         }
       });
   }
@@ -76,7 +65,7 @@ const Login = () => {
                 <div className="sign-up">
                   ¿No tienes una cuenta?{" "}
                   <NavLink className="nav_link" to={`/account/register`}>
-                    Crear uno
+                    Crea una cuenta
                   </NavLink>
                 </div>
               </form>

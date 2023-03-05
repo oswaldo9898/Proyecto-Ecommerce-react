@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './styles.css'
 
 const EmptyListCart = () => {
-
-
+    
     const regresarTienda = () => {
         <NavLink className='nav_link' to={`/`}></NavLink>
     }

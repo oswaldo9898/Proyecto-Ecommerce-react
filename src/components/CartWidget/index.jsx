@@ -13,7 +13,6 @@ const CartWidget = () => {
     const [cantProduct, setCantProduct] = useState(0);
     const [totalPagar, setTotalPagar] = useState(0);
 
-
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);

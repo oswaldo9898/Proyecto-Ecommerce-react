@@ -5,7 +5,7 @@ export { ItemDetail } from './ItemDetail';
 export { NavBar } from './NavBar';
 export { Checkout } from './Checkout';
 export { Footer } from './Footer';
-export { Account } from './Account'
+export { Orders } from './Orders'
 export { Login } from './Login'
 export { Register } from './Register'
 

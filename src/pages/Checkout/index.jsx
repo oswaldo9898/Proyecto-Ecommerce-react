@@ -1,23 +1,16 @@
 import { Brief } from "../../components/Brief";
 import { Payment } from "../../components/Payment";
-import './styles.css';
 import { productsService } from './../../services/productService.js';
-import { useEffect, useContext,  useState} from "react";
-import { CartContext } from '../../context';
+import { CartContext, AuthContext } from '../../context';
+import { notificationSuccess } from "../../utils.js";
+import { useContext} from "react";
+import './styles.css';
 
 const Checkout = () => {
     const { cart, clear } = useContext(CartContext);
+    const { datosUsuario } = useContext(AuthContext);
 
-
-
-    useEffect(() => {
-        productsService.getAllOrders().then((datos) => {
-            console.log(datos)
-        });
-    },[]);
-
-
-    const realizarPago = () => {
+    const realizarPago = (user) => {
         const productsCart = []
         cart.forEach(element => {
             productsCart.push({
@@ -27,12 +20,15 @@ const Checkout = () => {
             })
         });        
         let orden = {
+            uidUser: datosUsuario.uid,
             estado: "Generada",
             fecha: new Date().getTime(),
-            items: productsCart
+            items: productsCart,
+            user
         }
         productsService.insertOrder(orden).then((datos) => {
-            clear()
+            clear();
+            notificationSuccess('El proceso de pago se realizo');
         });
     }
 
@@ -51,10 +47,7 @@ const Checkout = () => {
                 <div className="detallePago">
                     <Payment realizarPago={realizarPago}/>
                 </div>
-                
             </div>
-
-            
         </div>
     )
 }

@@ -1,0 +1,64 @@
+.contenedorOrdenes {
+    display: flex;
+    margin: 25px 0 0 60px;
+}
+.listaOrdenes {
+    padding: 20px 20px 0 20px;
+    width: 250px;
+}
+.listaOrdenes div{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.listaOrdenes div:hover{
+    color: #0f23fd;
+    font-weight: bold;
+}
+
+.detalleOrden {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 50PX;
+    width: 700px;
+    border: 1px solid #000;
+}
+
+.encabezadoDetalle {
+    margin: 25px 0 0 25px;
+}
+
+.informacionOrden div{
+    display: flex;
+    margin-left: 25px;
+}
+
+.informacionOrden div p{
+    width: 350px;
+}
+
+.informacionProductos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px 25px 25px;
+}
+
+.productoItem {
+    display: flex;
+    border: 1px solid #000;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.productoItemProduct {
+    width: 350px;
+}
+
+.itemPrecio{
+    display: flex;
+}
+
+.productoItemCant {
+    width: 50px;
+}

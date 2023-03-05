@@ -1,35 +1,40 @@
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import { UsersService } from './../../services/auth.js';
-import { toast } from 'react-hot-toast';
+import { useState } from "react";
+import { notificationSuccess, notificationError } from "../../utils.js";
 
 const Register = () => {
-
-
+  const navigate = useNavigate();
+  const [register, setRegister ] = useState(false)
 
   const registroHandler = (e) => {
     e.preventDefault();
+    setRegister(true);
+
+    const nombres = e.target.InputName.value;
+    const apellidos = e.target.InputLastName.value;
     const email = e.target.InputEmail.value;
-    const password = e.target.InputEmail.value;
+    const password = e.target.InputPassword.value;
+
     UsersService.registerUser(email, password).then((datos) => {
       if(datos){
-        console.log(datos)
+        let user = {
+          nombres,
+          apellidos,
+          email,
+          uid: datos.user.uid
+        }
+        UsersService.insertUser(user).then((datos) => {
+          setRegister(false);
+          notificationSuccess('Cuenta creada con exito');
+          navigate('/')
+        })
       }else{
-        toast.error('Datos incorrectos',
-            {
-                duration: 2000,
-                position: 'bottom-right',
-                style: {
-                    border: '1px solid #666',
-                    background: '#333',
-                    color: '#fff'
-                },
-            }
-          )
-      }
-      
+          setRegister(false);
+          notificationError('Ocurrio un error intentelo nuevamente');
+      }      
     });
   }
-
 
 
   return (
@@ -82,6 +87,7 @@ const Register = () => {
                 <button
                   type="submit"
                   className="btn botonSign btn-primary btn-block"
+                  disabled={register}
                 >
                   Registrarse
                 </button>

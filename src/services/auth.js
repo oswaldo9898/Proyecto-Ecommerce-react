@@ -6,13 +6,20 @@ import {
     signOut
 } from "firebase/auth";
 
+import {
+    getFirestore,
+    doc,
+    collection,
+    setDoc,
+    
+} from "firebase/firestore";
+
 
 
 
 const isLogin = async() => {
     const auth = getAuth();
     let resp = await onAuthStateChanged(auth, (usuarioActivo) => {
-        console.log(usuarioActivo)
         return usuarioActivo
         
     });
@@ -25,7 +32,6 @@ const registerUser = async(email, password) => {
         const resp = await createUserWithEmailAndPassword(auth, email, password);
         return resp;
     } catch (error) {
-        console.log(error)
         return null
     }
 }
@@ -47,7 +53,13 @@ const signOutUser = async() => {
         resp = res;
     });
     return resp
-
 }
 
-export const UsersService = { isLogin, registerUser, loginUser,signOutUser }
+const insertUser =  async(datos) => {
+    const db = getFirestore();
+    const orderCollection = doc(collection(db, 'users'));
+    const result = await setDoc(orderCollection, datos);
+    return result;
+}
+
+export const UsersService = { isLogin, registerUser, loginUser,signOutUser, insertUser }

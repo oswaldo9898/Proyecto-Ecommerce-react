@@ -1,8 +1,8 @@
 import './styles.css'
 
-const Button = ({icono, handle, classButton, texto}) => {
+const Button = ({icono, handle, classButton, texto, deshabilitado}) => {
     return (
-        <button onClick={handle} className = {` button ${classButton} `}><i className={icono}></i> {texto}</button>
+        <button type='submit' onClick={handle} className = {` button ${classButton} ` } disabled={deshabilitado}><i className={icono}></i> {texto}</button>
     )
 }
 

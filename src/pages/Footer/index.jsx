@@ -40,8 +40,7 @@ const Footer = () => {
 
 
                 <div className="text-center p-3 footerBacground">
-                    © 2023 Copyright:
-                    <a className="text-white" href="https://mdbootstrap.com/"> Anime Shoe Shop</a>
+                    © 2023 Copyright: Anime Shoe Shop
                 </div>
                 
             </footer>

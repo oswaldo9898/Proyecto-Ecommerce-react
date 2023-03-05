@@ -1,18 +1,19 @@
 import './styles.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from "./../../context/auth";
 import { useContext } from 'react';
 import { UsersService } from './../../services/auth.js';
 
 
 const AccountWidget = () => {
+    const navigate = useNavigate();
     const { usuarioLogin, setUsuarioLogin} = useContext(AuthContext);
-
 
 
     const cerrarSesion = () => {
         UsersService.signOutUser().then((datos) => {
             setUsuarioLogin(false);
+            navigate('/')
         });
     }
 
@@ -32,7 +33,7 @@ const AccountWidget = () => {
                         Mi cuenta
                         </div>
                         <ul>
-                            <li><NavLink to="/checkout">Compras</NavLink></li>
+                            <li><NavLink to="/orders">Mis Ordenes</NavLink></li>
                             <li onClick={cerrarSesion}>Cerrar Sesión</li>
                         </ul>
                     </> : 

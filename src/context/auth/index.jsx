@@ -6,7 +6,6 @@ import {
 
 const AuthContext = createContext();
 
-
 const AuthProvider = ({children}) => {
     const [usuarioLogin, setUsuarioLogin] = useState(false);
     const [datosUsuario, setDatosUsuario] = useState();

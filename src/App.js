@@ -1,4 +1,4 @@
-import { Account, ItemListContainer, ItemDetailContainer, NavBar, Checkout,Footer, Login, Register } from "./pages";
+import { Orders, ItemListContainer, ItemDetailContainer, NavBar, Checkout,Footer, Login, Register } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider, AuthProvider } from "./context";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +14,7 @@ function App() {
           <Route path="/categoria/:category" element={<ItemListContainer />}></Route>
           <Route path="/producto/:idProduct" element={<ItemDetailContainer />}></Route>
           <Route path="/checkout" element={<Checkout />}></Route>
-          <Route path="/account" element={<Account />}></Route>
+          <Route path="/orders" element={<Orders />}></Route>
           <Route path="/account/login" element={<Login />}></Route>
           <Route path="/account/register" element={<Register />}></Route>
         </Routes>

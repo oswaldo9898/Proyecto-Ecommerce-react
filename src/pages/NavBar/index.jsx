@@ -1,11 +1,10 @@
-import './styles.css';
 import { CartWidget, BurgerButton, AccountWidget } from './../../components';
 import logo from './../../assets/img/logo-tienda.png';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import './styles.css';
 
 const NavBar = () => {
-    
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
@@ -38,8 +37,6 @@ const NavBar = () => {
                                 <li><NavLink onClick={handleClick} to="/categoria/mochila">MOCHILAS</NavLink></li>
                             </ul>
                         </li>
-                        {/* <li> <a href='#5'><i className="fa-solid fa-earth-americas"></i> LOCALES</a> </li>
-                        <li> <a href='#5'><i className="fa-solid fa-envelope"></i> CONTACTO</a> </li> */}
                     </ul>
                 </nav>
                 <div className='cart-login'>

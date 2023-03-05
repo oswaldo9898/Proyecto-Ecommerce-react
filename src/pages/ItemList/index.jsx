@@ -6,9 +6,7 @@ const ItemList = ({ products, agregarProducto }) => {
     return (
         <div className='cardsProducts'>
             {products.map((product) => {
-                // TODO ESTO PUEDE IR EN UN COMPONENTE CARD
                 return (
-
                     <div key={product.id} className="cardProducto">
                         <div className='cardImg'>
                             <NavLink to={`/producto/${product.id}`}>

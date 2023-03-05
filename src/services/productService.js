@@ -5,6 +5,8 @@ import {
     collection,
     getDocs,
     setDoc,
+    query,
+    where,
     
 } from "firebase/firestore";
 
@@ -38,11 +40,12 @@ const getProduct = async ( id ) => {
     return product;
 };
 
-const getAllOrders = async() => {
+const getAllOrders = async(uid) => {
     const db = getFirestore();
     const ordersCollection = collection(db, 'orders');
-    const snapshot = await getDocs(ordersCollection);
-    const orders =  snapshot.docs.map((doc) => ({id: doc.id, ...doc.data()}));
+    const q = query(ordersCollection, where('uidUser','==',uid));
+    const querySnapshot = await getDocs(q);
+    const orders = querySnapshot.docs.map( (doc) => ({id: doc.id, ...doc.data()}) );
     return orders;
 }
 
