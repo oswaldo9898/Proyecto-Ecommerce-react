@@ -8,13 +8,28 @@
 
 .cartList {
     display: flex;
-    min-width: 750px;
+    width: 750px;
     padding-left: 60px;
     padding-top: 60PX;
     margin-bottom: 50px;
 }
 
 
+
+@media (max-width: 1250px) {
+
+    .detallePago {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1041px) {
+
+    .detalleProducto {
+        margin: 0px !important;
+    }
+}
 
 @media (max-width: 990px) {
     .cartList {

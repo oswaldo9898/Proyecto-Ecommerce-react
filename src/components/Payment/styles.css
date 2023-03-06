@@ -1,7 +1,6 @@
 .iformacionPago {
     height: 500px;
-    width: 380px;
-    min-width: 250px;
+    width: 300px !important;
     padding: 10px 30px;
     margin-left: 40px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
@@ -12,9 +11,8 @@
 .informacionInicioSesion {
     display: flex;
     flex-direction: column;
-    height: 140px;
-    width: 380px;
-    min-width: 250px;
+    height: 180px;
+    width: 300px;
     padding: 10px 30px;
     margin-left: 40px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
@@ -41,4 +39,9 @@
 
 .iformacionPago div label{
     font-size: 15px;
+}
+
+
+@media (max-width: 1040px) {
+
 }

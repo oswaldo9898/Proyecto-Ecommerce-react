@@ -21,20 +21,20 @@ const ListCart = ({ arrayProductsCart, total, deleteProducToCart, handleClose })
                             <NavLink to={`/producto/${element.product.id}`}>{element.product.title}</NavLink>
                         </div>
                         <div className="priceProductCart centrarContenido">
-                            $ {element.product.price.toFixed(2)}
+                            $ {element.product.price}
                         </div>
                         <div className="CantidadProductCart centrarContenido">
                             {element.quantity}
                         </div>
                         <div className="totalProductCart centrarContenido">
-                            $ {(element.product.price * element.quantity).toFixed(2)}
+                            $ {(element.product.price * element.quantity)}
                         </div>
 
                     </div>
                 )
             })}
             <div className="totalProductos">
-                TOTAL A PAGAR: $ {total.toFixed(2)}
+                TOTAL A PAGAR: $ {total}
             </div>
         </>
     )
